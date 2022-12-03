@@ -1,0 +1,77 @@
+1.1 calculadora en elixir
+1.1 dos formas de hacer una calculadora hay esta es una:
+
+1.2 solamente con definir las operaciones que querramos junto con los numeros
+1.3
+defmodule Calculadora do
+def suma(n1, n2) do
+n1 + n2
+end
+def resta(n1,n2) do
+n1 - n2
+end
+def multiplicacion(n1, n2) do
+n1 * n2
+end
+def division(n1,n2) do
+n1 / n2
+end
+end
+
+# Esta es otra forma de hacerla
+
+defmodule Calculadora do
+def suma(n1,n2), do: n1+n2
+def resta(n1,n2), do: n1-n2
+def multiplicación(n1,n2), do: n1*n2
+def división(n1,n2), do: n1/n2
+end
+
+2.1 Hola mundo
+2.2 se define el modulo y se pone un IO.puts que es como se imprimen las cosas en elixir
+2.3
+defmodule HolaMundo do
+def mensaje do
+IO.puts("Hola Mundo")
+end
+end
+
+3.1 sacar el area de un circulo
+3.2 se define el modulo geometria en donde se definira la constante de pi y la variable de radio en la que le introduciremos un valor
+3.3
+defmodule Geometria do
+@pi 3.141592
+def area(r) do
+r*r*@pi
+end
+def circunferencia(r) do
+2 * r * @pi
+end
+end
+
+4.1 programa que define el sexo
+4.2 define el modulo persona y sexo y con solo presionar m (masculino) o f(femenino) te dira tu sexo
+4.3
+defmodule Persona4 do
+def sexo(sex) when sex == :m do
+"Masculino"
+end
+def sexo(sex) when sex == :f do
+"Femenino"
+end
+def sexo(_sex) do
+"sexo desconocido"
+end
+end
+
+5.1 sacar area de un rectangulo
+5.2 definimos modulo rectangulo,el area y los dos lados con sus valores
+5.3
+defmodule Rectangulo do
+def area(l) do
+l * l
+end
+def area(l1,l2) do
+l1 * l2
+end
+end
